@@ -9,3 +9,6 @@ class Blog(models.Model) :
 # 제목 그대로 보이게 하는 방법
     def __str__(self) :
         return self.title
+
+    def summary(self) :
+        return self.body[:100]
